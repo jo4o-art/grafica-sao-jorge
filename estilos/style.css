@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     background-image: url(../imagens/background.jpg);
-    
+    padding-bottom: 20px;
 }
 
 header {
@@ -23,8 +23,8 @@ header {
     justify-content: space-between;
 }
 
-header > #redes > #whatsapp {
-    padding-left: 20px;
+header>#redes>#whatsapp {
+    padding-left: 10px;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
     border-radius: 0 0 25px 25px;
 }
 
-nav > div#gamb {
+nav>div#gamb {
     display: flex;
     align-items: center;
     min-width: 200px;
@@ -46,22 +46,39 @@ nav > div#gamb {
     height: 100%;
 }
 
-nav > div#gamb > #logo {
+nav>div#gamb>#logo {
     width: 80%;
     margin: auto;
 }
 
 span#burguer {
+    display: block;
     margin: auto 30px;
     color: white;
     font-size: 30px;
     cursor: pointer;
 }
 
-nav > menu {
+#itens {
     display: none;
-    align-items: center;
-    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 125px;
+    width: 160px;
+}
+
+menu .options {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+menu .options:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav a {
@@ -71,23 +88,14 @@ nav a {
     font-size: 19px;
 }
 
-nav button {
-    color: red;
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-}
-
 main {
     text-align: center;
 }
 
 main .servissos {
     margin-top: 35px;
-    cursor: pointer;
     border-radius: 19px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: .5s;
 }
 
@@ -96,7 +104,7 @@ main .servissos:hover {
     box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-main > p {
+main p {
     margin-top: 10px;
     color: #A9ABAE;
     font-family: 'Poppins', sans-serif;
@@ -104,9 +112,17 @@ main > p {
     font-size: 25px;
 }
 
+div#zap>img {
+    position: fixed;
+    top: 89vh;
+    right: 15px;
+    border-radius: 50%;
+    width: 65px;
+    transition: .5s;
+    cursor: pointer;
+}
 
-
-
-footer {
-    display: none;
+#zap:hover>img {
+    transform: scale(1.15);
+    box-shadow: 0 0 5px white;
 }

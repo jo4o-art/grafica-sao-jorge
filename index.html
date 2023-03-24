@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="estilos/style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>São Jorge</title>
-</head>
+        <link rel="stylesheet" href="estilos/media-query.css">
 
-<body>
-    <header>
-        <p>BEM VINDO A</p>
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>São Jorge</title>
+    </head>
+    
+    <body onresize="tamanho()">
+        <header>
+            <p>BEM VINDO A</p>
+            <div id="zap"><img src="imagens/button-whatsapp.png" alt="whatsapp-botão"></div>
         <div id="redes">
             <img src="imagens/logo-instagram.png" alt="instagram" id="instagram">
             <img src="imagens/logo-whatsapp.png" alt="whatsapp" id="whatsapp">
@@ -21,36 +25,40 @@
     </header>
     <nav>
         <div id="gamb"><img src="imagens/logo.png" alt="logo" id="logo"></div>
-        <menu id="itens">
-            <a href="#">Suporte</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-            <button>FAÇA SEU PEDIDO</button>
-        </menu>
+        
         
         <span class="material-symbols-outlined" id="burguer" onclick="clikmenu()">menu</span>
+        <menu id="itens">
+            <a href="#" class="options">Suporte</a>
+            <a href="#" class="options">Sobre</a>
+            <a href="#" class="options">Contato</a>
+            <a href="#" class="options">Faça seu Pedido</a>
+        </menu>
 
     </nav>
     <main>
-        <img src="imagens/img-adesivo.png" alt="adesivo" class='servissos'>
-        <p>ADESIVO</p>
-
-        <img src="imagens/img-banner.png" alt="banner" class='servissos'>
-        <p>BANNER</p>
-
-        <img src="imagens/img-lona.png" alt="lona" class='servissos'>
-        <p>LONA</p>
-
-        <img src="imagens/img-fachada.png" alt="img-fachada" class='servissos'>
-        <p>FACHADAS</p>
+        <div id="adesivo">
+            <a href="#"><img src="imagens/img-adesivo.png" alt="adesivo" class='servissos'></a>
+            <p>ADESIVO</p>
+        </div>
+        <div id="banner">
+            <a href="#"><img src="imagens/img-banner.png" alt="banner" class='servissos'></a>
+            <p>BANNER</p>
+        </div>
+        <div id="lona">
+            <a href="#"><img src="imagens/img-lona.png" alt="lona" class='servissos'></a>
+            <p>LONA</p>
+        </div>
+        
+        <div id="fachadas">
+            <a href="#"><img src="imagens/img-fachada.png" alt="img-fachada" class='servissos'></a>
+            <p>FACHADAS</p>
         </div>
     </main>
-    <footer>
-        <img src="imagens/button-whatsapp.png" alt="whatsapp-botão">
-    </footer>
 
+    
     <script src="script.js"></script>
-
+    
 </body>
 
 </html>
