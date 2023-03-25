@@ -30,7 +30,7 @@ header>#redes>#whatsapp {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #1E1D1D;
+    background-color: #1c1c1c;
     width: 90vw;
     height: 125px;
     margin: auto;
@@ -107,11 +107,12 @@ div#zap>img {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
+    height: 8px;
     background-color: #1E1D1D;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(130, 130, 130);
-    border-radius: 2.5px;
+    border-radius: 4px;
 }

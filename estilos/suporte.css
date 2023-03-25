@@ -1,0 +1,44 @@
+
+
+main {
+    display: flex;
+    max-width: 950px;
+    min-width: 90vw;
+    height: 76.8vh;
+    text-align: center;
+}
+
+main > div#ga {
+    display: flex;
+    margin: auto;
+    width: 80lvw;
+    height: 600px;
+    text-align: center;
+}
+
+main > div#ga > div#text {
+    color: white;
+    background-image: linear-gradient(45deg, #192152, #5E1C1C);
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#text h1,h2,p {
+    margin: 0 0 20px 0;
+}
+
+strong {
+    display: block;
+    cursor: pointer;
+}
+
+strong:hover {
+    text-shadow: 0 0 10px green;
+    text-decoration: underline;
+}
+
+/* 
+#192152
+#5E1C1C
+*/
