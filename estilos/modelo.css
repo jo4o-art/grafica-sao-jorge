@@ -91,30 +91,6 @@ nav a {
     font-size: 19px;
 }
 
-main {
-    text-align: center;
-}
-
-main .servissos {
-    margin-top: 35px;
-    border-radius: 19px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: .5s;
-}
-
-main .servissos:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
-}
-
-main p {
-    margin-top: 10px;
-    color: #A9ABAE;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-}
-
 div#zap>img {
     position: fixed;
     top: 89vh;
