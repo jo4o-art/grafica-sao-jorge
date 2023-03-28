@@ -7,7 +7,7 @@
         right: 6vw;
         top: 90px;
         width: 420px;
-        overflow: auto;
+        overflow: visible;
     }
 
     menu .options {

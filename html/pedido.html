@@ -16,30 +16,31 @@
         <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
 
         <title>São Jorge</title>
-
+        
         <style>
             main {
+                display: flex;
+                max-width: 950px;
+                min-width: 90vw;
+                height: 76.8vh;
                 text-align: center;
             }
 
-            main .servissos {
-                margin-top: 35px;
-                border-radius: 19px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                transition: .5s;
+            main>div#ga {
+                display: flex;
+                margin: auto;
+                width: 80vw;
+                height: 600px;
+                text-align: center;
             }
 
-            main .servissos:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 10px rgb(255, 255, 255);
-            }
-
-            main p {
-                margin-top: 10px;
-                color: #A9ABAE;
-                font-family: 'Poppins', sans-serif;
-                font-weight: bold;
-                font-size: 25px;
+            main #text {
+                color: white;
+                background-image: linear-gradient(45deg, #192152, #5E1C1C);
+                margin: auto;
+                padding: 35px;
+                border-radius: 20px;
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
             }
         </style>
     </head>
@@ -56,41 +57,26 @@
             </div>
         </header>
         <nav>
-            <div id="gamb"><a href="#"><img src="../imagens/logo.png" alt="logo" id="logo"></a></div>
-
+            <div id="gamb"><a href="index.html"><img src="../imagens/logo.png" alt="logo" id="logo"></a></div>
 
             <span class="material-symbols-outlined" id="burguer" onclick="clikmenu()">menu</span>
             <menu id="itens">
                 <a href="suporte.html" class="options">Suporte</a>
                 <a href="sobre.html" class="options">Sobre</a>
                 <a href="contato.html" class="options">Contato</a>
-                <a href="pedido.html" class="options">Faça seu Pedido</a>
+                <a href="#" class="options">Faça seu Pedido</a>
             </menu>
-
         </nav>
         <main>
-            <div id="adesivo">
-                <a href="#"><img src="../imagens/img-adesivo.png" alt="adesivo" class='servissos'></a>
-                <p>ADESIVO</p>
-            </div>
-            <div id="banner">
-                <a href="#"><img src="../imagens/img-banner.png" alt="banner" class='servissos'></a>
-                <p>BANNER</p>
-            </div>
-            <div id="lona">
-                <a href="#"><img src="../imagens/img-lona.png" alt="lona" class='servissos'></a>
-                <p>LONA</p>
-            </div>
-
-            <div id="fachadas">
-                <a href="#"><img src="../imagens/img-fachada.png" alt="img-fachada" class='servissos'></a>
-                <p>FACHADAS</p>
+            <div id="ga">
+                <div id="text">
+                    <form method="post">
+                        
+                    </form>
+                </div>
             </div>
         </main>
-
-
         <script src="../js/script.js"></script>
-
     </body>
 
 </html>
